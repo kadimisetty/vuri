@@ -1,51 +1,51 @@
+/* Vuri
+**************************************/
+/* Minimal Reset
+**************************************/
 * {
+  margin: 0;
+  padding: 0;
+  position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media screen and (max-width: 500px) {
-  .element {
-    float: left;
-    display: block;
-    margin-right: 38.19821%;
-    width: 514.59462%; }
-    .element:last-child {
-      margin-right: 0; } }
+/* Grid
+**************************************/
+body {
+  max-width: 768px;
+  margin: 0 auto; }
 
-*[data-vuri-row] {
+*[data-vuri] {
+  max-width: 768px;
+  padding: 0 64px;
+  background-color: yellow; }
+
+*[data-vuri-half], *[data-vuri-whole] {
+  display: inline-block;
+  *display: inline;
   *zoom: 1;
-  max-width: 40em;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: blue; }
-  *[data-vuri-row]:before, *[data-vuri-row]:after {
-    content: " ";
-    display: table; }
-  *[data-vuri-row]:after {
-    clear: both; }
+  vertical-align: top;
+  	/* "Clear-fix"
+      */
+  overflow: hidden;
+  *overflow: visible; }
 
 *[data-vuri-whole] {
-  float: left;
-  display: block;
-  margin-right: 16.03631%;
-  width: 100%;
-  background-color: yellow; }
-  *[data-vuri-whole]:last-child {
-    margin-right: 0; }
+  width: 640px;
+  border: 1px solid red; }
 
 *[data-vuri-half] {
-  float: left;
-  display: block;
-  margin-right: 16.03631%;
-  width: 41.98184%;
-  background-color: red; }
-  *[data-vuri-half]:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 500px) {
-    *[data-vuri-half] {
-      float: left;
-      display: block;
-      margin-right: 38.19821%;
-      width: 100%; }
-      *[data-vuri-half]:last-child {
-        margin-right: 0; } }
+  width: 300px; }
+
+/* BreakPoints
+**************************************/
+@media screen and (max-width: 600px) {
+  *[data-vuri] {
+    margin-left: 0;
+    max-width: none; }
+
+  *[data-vuri-half], *[data-vuri-whole] {
+    width: auto;
+    margin-left: 0;
+    display: block; } }

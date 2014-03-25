@@ -7,42 +7,61 @@
     <meta name="description" content="Vuri">
     <meta name="author" content="Sri Kadimisetty">
 
+    <!-- Reset -->
     <link rel="stylesheet" href="assets/styles/reset.css">
+    
+    <!-- Vuri -->
     <link rel="stylesheet" href="assets/styles/vuri.css">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/styles/stylesheet.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <!-- Viewports -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 </head>
-<body data-vuri>
+<body>
+  <div data-vuri>
 
-  <section data-vuri-row>
-    <div data-vuri-whole>
-      <h1>Vuri</h1>
-      <h2>A small unobtrusive responsive css grid.</h2>
-    </div>
-  </section>
+    <header data-vuri-whole>
+        <h1>Vuri</h1>
+        <h2>A small unobtrusive responsive css grid.</h2>
+    </header>
 
-  <section data-vuri-row>
+
+    <section>
     <h1 data-vuri-half>Using Data Attributes</h1>
     <p data-vuri-half>I don't like my grids interfering with my styles.</p>
-  </section>
+    </section>
 
-  <section data-vuri-row>
-    <h1 data-vuri-half>Sam Soffes's Grid. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</h1>
+
+    <section>
+    <h1 data-vuri-half>Based on Sam Soffes's Grid.</h1>
     <p data-vuri-half>A simple grid that only has two breakpoints.</p>
-  </section>
+    </section>
 
-  <section data-vuri-row>
-    <h1 data-vuri-half class="reasons-heading">Type layout</h1>
+
+    <section>
+    <h1 data-vuri-half>Type layout</h1>
     <p data-vuri-half>Sets out the base for a clean typographic layout.</p>
-  </section>
+    </section>
 
-  <section data-vuri-row>
-    <p data-vuri-whole>Copyright etc.</p>
-  </section>
 
+    <section>
+    <p data-vuri-half>A simple grid that only has two breakpoints.</p>
+    <p data-vuri-half>Because you don't always need many more.</p>
+    </section>
+
+
+    <footer data-vuri-whole>
+    <p>Copyright etc.</p>
+    </footer>
+
+  </div><!-- /data-vuri -->
 </body>
 </html>
 
