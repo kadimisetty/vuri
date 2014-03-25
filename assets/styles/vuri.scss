@@ -1,0 +1,48 @@
+// Imports
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+$gw-column: 100px;          // Column Width
+$gw-gutter: 40px;  
+
+// Grid Variables
+$max-width: em(640, 16);
+$grid-columns: 2;
+
+// BreakPoints
+// $mobile: new-breakpoint(max-width 320px 1);
+$mobile: new-breakpoint(max-width 500px 1);
+
+.element {
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+}
+
+
+// Styles
+*[data-vuri] {
+    // $mobile: new-breakpoint(max-width 500px 6);
+}
+
+*[data-vuri-row] {
+    @include outer-container;
+    background-color: blue;
+}
+
+
+*[data-vuri-whole] {
+    @include span-columns(2);
+    background-color: yellow;
+}
+
+*[data-vuri-half] {
+    // $gutter: em(300, 16);
+    // $column: em(40, 16);
+    @include span-columns(1);
+    background-color: red;
+
+    @include media($mobile) {
+        @include span-columns(1);
+    }
+}
