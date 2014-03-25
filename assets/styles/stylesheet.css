@@ -1,52 +1,56 @@
-/* Vuri
-**************************************/
-/* Minimal Reset
-**************************************/
-* {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+a.button {
+  text-decoration: none;
+  margin: 1em;
+  padding: 0.6em 0.6em;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #4d7c90;
+  border: 1px solid #85adbe;
+  border-radius: 10px; }
 
-/* Grid
-**************************************/
 body {
-  max-width: 768px;
-  margin: 0 auto; }
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 16px;
+  background-color: #d1eefc;
+  color: #4d7c90; }
 
-*[data-vuri] {
-  max-width: 768px;
-  padding: 0 64px;
-  background-color: yellow; }
+p {
+  font-size: 1em;
+  line-height: 1.4em; }
 
-*[data-vuri-half], *[data-vuri-whole] {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  vertical-align: top;
-  	/* "Clear-fix"
-      */
-  overflow: hidden;
-  *overflow: visible; }
+a {
+  text-decoration: none; }
 
-*[data-vuri-whole] {
-  width: 640px;
-  border: 1px solid red; }
+h2 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  color: #7aa6b8; }
 
-*[data-vuri-half] {
-  width: 300px; }
+header {
+  margin: 1em 0; }
+  header h1 {
+    font-size: 2em; }
 
-/* BreakPoints
-**************************************/
-@media screen and (max-width: 600px) {
-  *[data-vuri] {
-    padding: 0 20px;
-    margin-left: 0;
-    max-width: none; }
+header, footer, section {
+  padding: 1em;
+  margin-bottom: 2em; }
 
-  *[data-vuri-half], *[data-vuri-whole] {
-    width: auto;
-    margin-left: 0;
-    display: block; } }
+section.features {
+  background-color: #bee7fb; }
+  @media not screen and (max-width: 600px) {
+    section.features h2 {
+      font-size: 2em;
+      text-align: right;
+      padding-right: 1rem; }
+    section.features p {
+      border-left: 1px solid #a6c3d0;
+      padding-left: 1rem; } }
+  @media screen and (max-width: 600px) {
+    section.features h2 {
+      text-align: center;
+      border-bottom: 1px solid #a6c3d0;
+      padding-bottom: 0.2em;
+      margin-bottom: 0.4em; } }
+
+header, footer, .description {
+  text-align: center; }

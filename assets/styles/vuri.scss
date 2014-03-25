@@ -25,11 +25,10 @@ body {
 
 *[data-vuri] {
 	// margin-left: -3%;
-	// max-width: 105%;
-	max-width: 768px;
-	padding: 0 64px;
-	// padding: 0 1.5rem;
-    background-color: yellow;
+	max-width: 105%;
+	// max-width: 768px;
+	// padding: 0 64px;
+	padding: 0 1.5rem;
 }
 
 *[data-vuri-half], *[data-vuri-whole] {
@@ -37,8 +36,8 @@ body {
 	*display: inline;
 	*zoom: 1;
 	vertical-align: top;
-	// margin-left: 3%;
-	// margin-right: -.25em;
+	margin-left: 3%;
+	margin-right: -.25em;
 
 	/* "Clear-fix"
     */
@@ -47,14 +46,13 @@ body {
 }
 
 *[data-vuri-whole] {
-	// width: 97%;
-	width: 640px;
-    border: 1px solid red;
+	width: 97%;
+	// width: 640px;
 }
 
 *[data-vuri-half] {
-    // width: 47%; 
-    width: 300px; 
+    width: 47%; 
+    // width: 300px; 
 }
 
 

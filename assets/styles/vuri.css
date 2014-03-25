@@ -17,26 +17,26 @@ body {
   margin: 0 auto; }
 
 *[data-vuri] {
-  max-width: 768px;
-  padding: 0 64px;
-  background-color: yellow; }
+  max-width: 105%;
+  padding: 0 1.5rem; }
 
 *[data-vuri-half], *[data-vuri-whole] {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   vertical-align: top;
+  margin-left: 3%;
+  margin-right: -.25em;
   	/* "Clear-fix"
       */
   overflow: hidden;
   *overflow: visible; }
 
 *[data-vuri-whole] {
-  width: 640px;
-  border: 1px solid red; }
+  width: 97%; }
 
 *[data-vuri-half] {
-  width: 300px; }
+  width: 47%; }
 
 /* BreakPoints
 **************************************/
