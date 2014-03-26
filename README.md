@@ -17,7 +17,7 @@ An example page `index.html` that uses `vuri`. Note the `data-` HTML attribute t
 <!doctype html>
 <html>
 <head>
-    <!-- Vuri -->
+    <!-- vuri -->
     <link rel="stylesheet" href="assets/styles/vuri.css">
 </head>
 <body>
