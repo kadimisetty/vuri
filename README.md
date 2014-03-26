@@ -2,9 +2,10 @@
 A simple responsive two column CSS grid framework.
 
 ## Why another grid system?
-- Uses data attributes to keep your classes unpolluted
-- A seperate `row` div to contain columns like in other grids is not necessary
-- Simple to learn. Take's cues from Sam Soffes's simple grid.
+- Uses data attributes thus keeping your grid speerate from your styles
+- A seperate `row` div to contain columns is not necessary
+- Simple to learn because there's little to learn
+- Two halves make a whole. Each row only has either one or two columns.
 
 ## Install
 - Include `vuri.css` in your web page.

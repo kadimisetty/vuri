@@ -1,0 +1,108 @@
+
+// Fonts
+$ff-meta-web-font-family: "ff-meta-web-pro", sans-serif;
+$futura-web-font-family: "futura-pt",sans-serif;
+$brandon-web-font-family: "brandon-grotesque",sans-serif;
+$body-font-family: $brandon-web-font-family;
+
+
+// Colors
+$text-primary-color: darken(desaturate(#34AADC, 40%), 10%);
+$text-secondary-color: darken($text-primary-color, 50%);
+$header-secondary-color: lighten($text-secondary-color, 60%);
+
+$body-bg: lighten(#1F1F21, 0%);
+$body-bg: lighten(#D1EEFC, 0%);
+$section-bg: darken($body-bg, 4%);
+$section-dividers: lighten($text-primary-color, 30%);
+
+
+a.button{
+        text-decoration: none;
+        margin: 1em;
+        padding: 0.6em 0.6em;
+        font-size: 12px;
+        text-transform: uppercase;
+
+        color: $text-primary-color;
+        border: 1px solid lighten($text-primary-color, 20%);
+        border-radius:10px;
+}
+
+
+body {
+    font-family: $body-font-family;
+    font-size: 16px;
+
+    background-color: $body-bg;
+    color: $text-primary-color;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+h2 {
+    font-size:  1.2em;
+    line-height: 1.2em;
+    color: $header-secondary-color;
+}
+
+header {
+    margin: 1em 0;
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+header, footer, section {
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+section.features{
+    background-color: $section-bg;
+
+    // Not Mobile
+    @media not screen and (max-width: 600px) {
+
+            h2 {
+                font-size: 2em;
+                // font-weight: bold;
+                text-align: right;
+                padding-right: 1rem;
+            }
+
+            p {
+                border-left: 1px solid $section-dividers;
+                padding-left: 1rem;
+            }
+    }
+
+    // Mobile Only
+    @media screen and (max-width: 600px) {
+            h2 {
+                text-align: center;
+                border-bottom: 1px solid $section-dividers;
+                padding-bottom: 0.2em;
+                margin-bottom: 0.4em;
+            }
+    }
+}
+
+
+
+header, footer, .description {
+    text-align: center;
+}
+
+.description {
+}
