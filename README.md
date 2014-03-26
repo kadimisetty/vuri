@@ -45,6 +45,11 @@ If you'd like more explanation -
 - A row with two half columns are drawn in div/elements the contain the `data-vuri-half` data attribute.
 
 
+## How do you say `vuri`
+`vuri` is the Telugu word for paddy crop. Paddy crops are planted in a beautiful grid like layout.
+Say `vuri` like _worry_ but with a _v_ instead of a _w_.
+
+
 ## Credits
 - Written atop [Toast CSS](https://daneden.me/toast)
 - Based on [Sam Soffes Grid System](http://sam.roon.io/my-grid-system)
