@@ -1,4 +1,50 @@
-vuri
-====
+# vuri
+A simple responsive two column CSS grid framework.
 
-A small css grid
+## Why another grid system?
+- Uses data attributes to keep your classes unpolluted
+- A seperate `row` div to contain columns like in other grids is not necessary
+- Simple to learn. Take's cues from Sam Soffes's simple grid.
+
+## Install
+- Include `vuri.css` in your web page.
+
+## Usage
+An example page `index.html` that uses `vuri`. Note the `data-` HTML attribute tags.
+
+```
+<!doctype html>
+<html>
+<head>
+    <!-- Vuri -->
+    <link rel="stylesheet" href="assets/styles/vuri.css">
+</head>
+<body>
+    <div data-vuri>
+        <header data-vuri-whole>
+            <h1>Chucky Cheese</h1>
+        </header>
+
+        <section>
+            <p data-vuri-half>One half goes here.</p>
+            <p data-vuri-half>The other half goes here.</p>
+        </section>
+
+        <footer data-vuri-whole>
+            <p>Have a nice day!</p>
+        </footer>
+    </div>
+</body>
+
+```
+
+If you'd like more explanation - 
+- The grid is initiatied within any div/element that contains the `data-vuri` data attribute.
+- Each row can either contain a single *whole* column or 2 *half* columns.
+- A row with just one whole column is drawn in a div/element that contains the `data-vuri-whole` data attribute.
+- A row with two half columns are drawn in div/elements the contain the `data-vuri-half` data attribute.
+
+
+## Credits
+- Written atop [Toast CSS](https://daneden.me/toast)
+- Based on [Sam Soffes Grid System](http://sam.roon.io/my-grid-system)
