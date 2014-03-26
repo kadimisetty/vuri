@@ -2,7 +2,7 @@
 A simple responsive two column CSS grid framework.
 
 ## What's so special about vuri?
-- Uses data attributes, thus keeping your grid seperate from your styles
+- Uses HTML5 data attributes, thus keeping your grid seperate from your styles
 - Two halves make a whole. Each row only has either one or two columns.
 - A seperate `row` div to contain columns is not necessary
 - Simple to learn because there's little to learn
@@ -39,14 +39,18 @@ A simple responsive two column CSS grid framework.
 ```
 
 If you'd like more explanation - 
-- The grid is initiatied within any div/element that contains the `data-vuri` attribute.
-- Each row can either contain a single *whole* column or 2 *half* columns.
+- The grid is initiated within any div/element that contains the `data-vuri` attribute. Do this just once.
+- Each row can contain upto 2 columns. Either a single *whole* column or 2 *half* columns.
 - A row with just one whole column is drawn in a div/element that contains the `data-vuri-whole` attribute.
 - A row with two half columns are drawn in div/elements the contain the `data-vuri-half` attribute.
 
 
+## Does using data attributes hurt the semantic layout of the web page?
+No. All data attributes that begin with `data-` do not pose any semantic casualties to the web page.
+
+
 ## How do you say vuri
-Say `vuri` like _curry_ but with a _v_ instead of a _c_.
+Say `vuri` like you'd say _hurry_ but with a _v_ instead of a _h_.
 
 `vuri` is the Telugu word for paddy crop. Paddy crops are planted in a [beautiful grid like layout](https://www.flickr.com/photos/jasohill/5811407971).
 
